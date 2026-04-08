@@ -1,0 +1,36 @@
+﻿body{
+	background-color:Pink;
+}
+
+table{
+	boder-collapse:collapse;
+	boder:2px solid red;
+			}
+th{
+	paddinh: 10px 20px:
+	background: linghred;
+	}
+td{
+	paddinh: 10px 20px:
+	background: 1px solid red ;
+}
+p{
+	font-size:30px
+}
+
+table-box td, th {
+	paddinh: 20px;
+	font-size:25px;
+}
+
+table-box td:hover{
+	background: linghred;
+}
+
+td ing{
+	
+}
+
+h1{
+		color: green;
+}
