@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK From ĐN</title>
+	<link rel="stylesheet" href="../css/styles1.css">
+</head> 
+
+<meta charset="UTF-8">
+
+<body>
+    <h2>Hóa Đơn Thanh Toán</h2>
+    <table bodder = "1">
+        <tr>
+            <th>STT</th>
+            <th>Tên Sản Phẩm</th>
+            <th>Số Lượng</th>
+            <th>Đơn Giá</th>
+            <th>Thành Tiền</th>
+        </tr>
+        <tr>
+           <td>1</td>
+           <td>A</td>
+           <td class = "sl">3</td>
+           <td class = "dg">1000</td>
+           <td class = "tt"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>B</td>
+           <td class = "sl">3</td>
+           <td class = "dg">2000</td>
+           <td class = "tt"></td>
+        </tr>
+        <tr>
+           <td>3</td>
+           <td>C</td>
+           <td class = "sl">5</td>
+           <td class = "dg">4000</td>
+           <td class = "tt"></td>
+        </tr>
+        <tr>
+           <td>4</td>
+           <td>D</td>
+           <td class = "sl">2</td>
+           <td class = "dg">5000</td>
+           <td class = "tt"></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td id="trong" colspan="2"></td>
+        </tr>
+    </table>
+    <script>
+        const donGia=document.getElementsByClassName("dg");
+        const soLuong=document.getElementsByClassName("sl");
+        const thanhTien=document.getElementsByClassName("tt");
+        let long=0;
+        for(let i=0; i<donGia.length; i++){
+            thanhTien[i].innerHTML = soLuong[i].innerHTML * donGia[i].innerHTML;
+            tong=tong+parseInt(thanhTien[i].innerHTML);
+        }
+        document.getElementById("tong").innerHTML = tong;
+
+    </script>    
+    
+</body>
