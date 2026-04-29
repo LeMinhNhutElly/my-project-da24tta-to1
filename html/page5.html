@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Làm</title>
+    <style></style>
+</head>
+<body>
+    <script>
+            const myDiv = document.createElement("div");
+            myDiv.setAttribute("class","product-item");
+
+            const myDiv1 = document.createElement("div");
+            myDiv1.setAttribute("class","product-image");
+
+            const productImg = document.createElement("img");
+            productImg.setAttribute("src","../assets/images/hoamai.jpg");
+            productImg.setAttribute("alt","Hoa Mai");
+            myDiv1.appendChild(productImg);
+             myDiv.appendChild(myDiv1);
+
+            const myDiv2 = document.createElement("div");
+            myDiv2.setAttribute("class","product-info");
+            
+
+            const productName = document.createElement("p");
+            const textName = document.createTextNode("Ảnh Hoa Mai");
+            productName.appendChild(textName);
+            myDiv2.appendChild(productName);
+           
+
+            const productPrice = document.createElement("p");
+            const textPrice = document.createTextNode("150k/2 Chậu");
+            productPrice.appendChild(textPrice);
+            myDiv2.appendChild(productPrice);
+            myDiv.appendChild(myDiv2);
+            
+            
+           const link = document.createElement("a");
+           link.setAttribute("href","#");
+            const testlink = document.createTextNode("Chi Tiết");
+            link.appendChild(testlink);
+            myDiv2.appendChild(link);
+
+
+            document.body.appendChild(myDiv);
+    </script>
+    <div href="../js/lib.js">
+        <button onclick="add()">Click</button>
+    </div>
+</body>
+</html>
