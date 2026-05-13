@@ -16,13 +16,13 @@
             const productImg = document.createElement("img");
             productImg.setAttribute("src","../assets/images/hoamai.jpg");
             productImg.setAttribute("alt","Hoa Mai");
+            productImg.setAttribute("width","300")
             myDiv1.appendChild(productImg);
-             myDiv.appendChild(myDiv1);
+            myDiv.appendChild(myDiv1);
 
             const myDiv2 = document.createElement("div");
             myDiv2.setAttribute("class","product-info");
             
-
             const productName = document.createElement("p");
             const textName = document.createTextNode("Ảnh Hoa Mai");
             productName.appendChild(textName);
@@ -36,8 +36,8 @@
             myDiv.appendChild(myDiv2);
             
             
-           const link = document.createElement("a");
-           link.setAttribute("href","#");
+            const link = document.createElement("a");
+            link.setAttribute("href","#");
             const testlink = document.createTextNode("Chi Tiết");
             link.appendChild(testlink);
             myDiv2.appendChild(link);
@@ -45,8 +45,10 @@
 
             document.body.appendChild(myDiv);
     </script>
-    <div href="../js/lib.js">
+    <div>
         <button onclick="add()">Click</button>
+        
     </div>
+    <script src="../js/lib.js"></script>
 </body>
 </html>
